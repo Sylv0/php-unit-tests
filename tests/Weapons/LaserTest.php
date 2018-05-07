@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Yrgo\Tests\Weapons;
 
-use Yrgo\Weapons\Laser;
-use PHPUnit\Framework\TestCase;
 use InvalidArgumentException;
+use PHPUnit\Framework\TestCase;
+use Yrgo\Weapons\Laser;
 
 /**
  * This is the laser weapon test class.
@@ -50,9 +50,9 @@ class LaserTest extends TestCase
     public function testSetInvalidColor()
     {
         $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage("Invalid laser color [wah]");
+        $this->expectExceptionMessage('Invalid laser color [wah]');
 
         $laszzzoor = new Laser();
-        $laszzzoor->setColor("wah");
+        $laszzzoor->setColor('wah');
     }
 }
