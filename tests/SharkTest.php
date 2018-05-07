@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Yrgo\Tests\Weapons;
 
+use PHPUnit\Framework\TestCase;
 use Yrgo\Shark;
 use Yrgo\Weapons\Laser;
-use PHPUnit\Framework\TestCase;
 
 /**
  * This is the shark test class.
